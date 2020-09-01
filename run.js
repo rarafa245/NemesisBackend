@@ -1,4 +1,3 @@
- 
 const server = require('./config')
 
 server.listen(5000, () => {
