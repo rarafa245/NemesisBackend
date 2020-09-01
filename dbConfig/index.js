@@ -1,6 +1,8 @@
 const redisDB = require('./redisDB')
+const sqlite = require('./sqliteDB')
 
 
 module.exports = {
-    redisDB : redisDB
+    redisDB : redisDB,
+    sqlite: sqlite
 }
