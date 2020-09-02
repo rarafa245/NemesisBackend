@@ -1,8 +1,11 @@
+const path = require('path')
+
 const sqliteConfig = {
     dialect: 'sqlite',
-    storage: './../../../DBexport/storage.db',
+    storage: path.resolve(__dirname, './../../../DBexport/storage.db'),
     //logging: false,
     define: {
+        freezeTableName: true,
         timestamps: false
     }
 }
