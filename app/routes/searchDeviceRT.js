@@ -6,7 +6,7 @@ const deviceRT = (application) => {
     :return - None
   */
   
-  application.get('/api/v1/location/', (req, res) => searchDeviceRTinfos(req, res))
+  application.get('/api/v1/location/', (req, res) => searchDeviceRTinfos(req, res, device_id=req.query.device_id))
 
 }
 
