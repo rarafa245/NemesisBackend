@@ -12,5 +12,8 @@ server.use(bodyParser.json())
 server.use(upload.array())
 server.use(cors())
 
+//Adding Routes
+const appRouters = require('./appRoutes')(server)
+
 
 module.exports = server
