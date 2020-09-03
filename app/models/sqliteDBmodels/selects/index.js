@@ -1,5 +1,6 @@
-const { selectDeviceInfos } = require('./selects')
+const { selectDeviceInfos, searchUser } = require('./selects')
 
 module.exports = {
-    selectDeviceInfos: selectDeviceInfos
+    selectDeviceInfos: selectDeviceInfos,
+    searchUser: searchUser
 }

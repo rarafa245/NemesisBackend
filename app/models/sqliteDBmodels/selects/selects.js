@@ -15,7 +15,14 @@ const selectDeviceInfos = (device_id) => DevicesInfo.findAll({
     }
 })
 
+const searchUser = (username) => Users.findAll({
+    limit: 1,
+    attributes: ['user_id', 'username', 'password'],
+    where: { username: username }
+})
+
 
 module.exports = {
-    selectDeviceInfos: selectDeviceInfos
+    selectDeviceInfos: selectDeviceInfos,
+    searchUser: searchUser
 }
