@@ -20,6 +20,8 @@ const authToken = (req, res, next) => {
 
     jwt.verify(token, process.env.ACESS_TOKEN_SECRET, (err, data) => {
 
+        console.log(data)
+
         if (err || (data.JWTUserID != userID))           // Checking jwt key equals to user identification
             return res.json({
                 status: false,

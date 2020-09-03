@@ -27,7 +27,7 @@ const loginUser = (req, res) => {
         }
   
         const EXPIRE_JWT_TIME = 40
-        const token = createToken(response.userID, EXPIRE_JWT_TIME)
+        const token = createToken(response.user_id, EXPIRE_JWT_TIME)
   
         return res.json({
           userID: response.user_id,
