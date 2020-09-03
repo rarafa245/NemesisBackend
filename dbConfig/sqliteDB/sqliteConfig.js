@@ -2,7 +2,7 @@ const path = require('path')
 
 const sqliteConfig = {
     dialect: 'sqlite',
-    storage: path.resolve(__dirname, './../../../DBexport/storage.db'),
+    storage: path.resolve(__dirname, './../../../NemesisDBexport/storage.db'),
     //logging: false,
     define: {
         freezeTableName: true,
