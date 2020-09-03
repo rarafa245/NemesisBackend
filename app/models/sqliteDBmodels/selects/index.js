@@ -1,12 +1,5 @@
-const {
-    selectAllDevices,
-    selectAllUsers,
-    selectAllUsersDevices,
-    selectUserDevices} = require('./selects')
+const { selectDeviceInfos } = require('./selects')
 
 module.exports = {
-    selectAllDevices,
-    selectAllUsers,
-    selectAllUsersDevices,
-    selectUserDevices
+    selectDeviceInfos: selectDeviceInfos
 }

@@ -1,7 +1,7 @@
 const { searchDeviceRTinfos } = require('./../controller/searchDeviceRT')
 
 const deviceRT = (application) => {
-  /* Routes related to get Real Time information
+  /* Routes related to get Real Time device information
     :parram - application server
     :return - None
   */
