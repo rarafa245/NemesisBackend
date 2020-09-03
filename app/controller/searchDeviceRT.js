@@ -1,7 +1,7 @@
 const { redisDeviceRT } = require('./../models/redisDBmodels')
 
 const searchDeviceRTinfos = (req, res, device_id) => {
-    /* Get informarions of current device in RT
+    /* Get informarions of current device in RT real time
         :parram - device_id - Identification of the Devide in URL param
         :return - Json with the current information
     */

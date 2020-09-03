@@ -3,7 +3,7 @@ const { loginUser } = require('./../controller/userLogin')
 const { registerAccount } = require('./../controller/userCreate')
 
 const login = (application) => {
-  /* Routes related to login. Redirecting to controllers
+  /* Routes related to Client manage
     :parram - application server
     :return - None
   */
