@@ -1,4 +1,5 @@
 const { searchDeviceRTinfos } = require('./../controller/searchDeviceRT')
+const authToken = require('./../middleware')
 
 const deviceRT = (application) => {
   /* Routes related to get Real Time device information
@@ -6,7 +7,7 @@ const deviceRT = (application) => {
     :return - None
   */
   
-  application.get('/api/v1/location/', (req, res) => searchDeviceRTinfos(req, res, device_id=req.query.device_id))
+  application.get('/api/v1/location/', authToken, (req, res) => searchDeviceRTinfos(req, res, device_id=req.query.device_id))
 
 }
 
