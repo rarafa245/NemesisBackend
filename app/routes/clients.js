@@ -2,7 +2,7 @@
 const { loginUser } = require('./../controller/userLogin')
 const { registerAccount } = require('./../controller/userCreate')
 const { meuTeste } = require('./../controller/teste')
-const httpRequest = require('./adapter')
+const { httpRequest } = require('./helpers')
 
 const login = (application) => {
   /* Routes related to Client manage
